@@ -1,0 +1,51 @@
+﻿{
+
+  "name": "Fraværsgraf",
+
+  "description": "Lav en graf over en klasses fravær direkte fra klassens fraværsside.",
+
+  "version": "1.1",
+
+
+  "icons": {
+    "16": "icon16.png",
+    "24": "icon24.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128":"icon128.png"
+  },
+
+  "content_security_policy": "default-src 'self' 'unsafe-eval' https://www.gstatic.com/charts/",
+
+  "permissions": [
+
+    "activeTab",
+    "declarativeContent"
+
+  ],
+
+
+  "background": {
+
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+
+  "page_action": {
+
+    "default_icon": {
+      "16": "icon16.png",
+      "24": "icon24.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128":"icon128.png"
+    },
+    "default_title": "Fraværsgraf",
+    "default_popup": "popup.html"
+
+  },
+
+
+  "manifest_version": 2
+}
